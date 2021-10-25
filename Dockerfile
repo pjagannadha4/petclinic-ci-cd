@@ -6,7 +6,7 @@ RUN  unzip apache-tomcat-9.0.48.zip
 RUN mv apache-tomcat-9.0.48 tomcat
 RUN chmod -R 700 tomcat
 WORKDIR /opt
-RUN git clone https://github.com/prasad888/spring-framework-petclinic.git
+RUN git clone https://github.com/pjagannadha4/petclinic-ci-cd/edit/main/Dockerfile
 WORKDIR /opt/spring-framework-petclinic
 RUN mvn clean package
 WORKDIR /opt/spring-framework-petclinic/target
